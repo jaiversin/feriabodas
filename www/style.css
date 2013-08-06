@@ -1,0 +1,167 @@
+/* 
+    Document   : style
+    Created on : 4/08/2013, 07:25:41 PM
+    Author     : fredo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@import url(fontawesome.css);
+@import url(http://fonts.googleapis.com/css?family=Glegoo);
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+    font-size: 21px;
+}
+
+body {
+    background: #B9E0CE url(bg_registro.png);
+    font-family: 'Glegoo', serif;
+}
+
+.content {
+    text-align: center;
+    margin: 30px 17px;
+}
+
+.right {
+    text-align: center;
+    float: right;
+    width: 70%;
+    border: 1.5px dashed #FFF;
+    border-radius: 8px;
+    padding: 10px;
+    height: 635px;
+    padding-top: 20px;
+}
+
+.left {
+    text-align: center;
+    float: left;
+    width: 26%;
+    margin-right: 10px;
+}
+
+.video {
+    background: #FFF;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.splashico {
+    background: url(ico_social_white.png) no-repeat;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 13px;  
+    left: 62%;
+}
+
+.lst_mails {
+    background: rgba(255,255,255, 0.6);
+    border-radius: 5px;
+    text-align: left;
+    border: 1px dashed #B9E0CE;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #999;
+    height: 240px;
+    overflow: auto;
+}
+
+.lst_mails ul {
+    margin: 0;
+    padding: 15px;
+}
+
+.lst_mails ul li {
+    list-style: none;
+}
+
+.down_free {
+    color: #eb4d7d;
+    text-transform: uppercase;
+    font-size: 23px;
+}
+
+.desc {
+    font-size: 14px;
+    color: #43776a;
+}
+
+input {
+    border-radius: 8px;
+    border: 1px dashed #B9E0CE;
+    width: 92%;
+    height: 40px;
+    margin: 5px;
+}
+
+input[type='text'], input[type='email'], input[type='password'], input[type='file'], input[type='date'] {
+    padding-left: 10px;
+    font-size: 16px;
+    margin: 3px 0;
+}
+
+input[type='submit'] {
+    width: 100%;
+    margin: 0;
+    /*background-color: #EE376D;*/
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ed386d), color-stop(50%,#ed386d), color-stop(51%,#dc3467), color-stop(100%,#dc3467));
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.footer {
+    margin-top: 10px;
+    width: 72%;
+    float: right;
+}
+
+.icons {
+    float: left;
+}
+
+.stores {
+    float: right;
+}
+
+.stores img {
+    width: 200px;
+}
+
+.modalOverlay
+{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;	       
+    left:0;
+    margin:0;
+    padding:0;
+    background:#000;
+    opacity:0;
+    -webkit-transition: opacity 0.3s ease-in;
+    z-index:101;
+}
+.modalWindow
+{
+    position: fixed;
+    top: 160px;
+    margin: 0;
+    border: 1.5px dashed #fff;
+    width: 500px;
+    text-align: center;
+    line-height: 15px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    padding: 10px;
+    opacity: 0;
+    z-index: 102;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #63ba45), color-stop(2%, #5eb243), color-stop(100%, #3b7566));
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: -1px 2px 12px rgba(0, 0, 0, 0.91);
+    -webkit-transition: opacity 0.3s ease-in;                        
+}

@@ -1,0 +1,45 @@
+<!--
+ To change this template, choose Tools | Templates
+ and open the template in the editor.
+ -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <link type="text/css" rel='stylesheet' href="style.css" />
+            <script type="text/javascript" src="cordova.js"></script>
+            <script type="text/javascript" src="storage.js"></script>
+            </head>
+    <body onload="onDevice();">
+        <div class="content">
+            <div class="left">
+                <img src="logo_social.png" alt="logo">
+                    <br />
+                    <div class="down_free">Descárgala gratis próximante</div>
+                    <div class="desc">¿Deseas ser notificado cuanto publiquemos nuestra aplicación?</div>
+                    <div class="desc">- Déjanos tus datos -</div>
+                    <form action="javascript:void(0);" onsubmit="save_user();" method="POST">
+                        <input type="text" id="name" placeholder="Nombre" />
+                        <input type="email" id="email" placeholder="Email" />
+                        <input type="submit" id="sub" value="Enviar" />
+                    </form>
+                    <div class="lst_mails" id="lst_mails">
+                    </div>
+                    </div>
+            <div class="right">
+                <div class="splashico" onclick="share_email();"></div>
+                <div class="video">
+                    <video height="600" width="394"  autoplay loop controls>
+                        <source src="weddinghappy.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video>
+                </div>
+            </div>
+            <div class="footer">
+                <span class="icons"><img src="ico_splash.png" /></span>
+                <span class="stores"><img src="google-play-apple-store.png" /></span>
+            </div>
+        </div>
+    </body>
+</html>
